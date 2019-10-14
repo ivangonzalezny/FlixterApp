@@ -1,56 +1,44 @@
-# FlixterApp
-Flixter App for codepath
-
-**Flixter App** is an android app that lets you stay up to date with the most recent movies 
+# Flix
+Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
 Submitted by: **Ivan Gonzalez**
 
 Time spent: ** ** hour(s) spent in total
 
-## User Stories
 
-The following **required** functionality is completed:
+📝 `NOTE - PASTE PART 2 SNIPPET HERE:` Paste the README template for part 2 of this assignment here at the top. This will show a history of your development process, which users stories you completed and how your app looked and functioned at each step.
 
-* [x] User can **successfully add and remove items** from the todo list
-* [X] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected in the todo list.
-* [x] User can **persist todo items** and retrieve them properly on app restart
+---
 
-The following **optional** features are implemented:
+## Flix Part 1
 
-* [ ] Persist the todo items [into SQLite](http://guides.codepath.com/android/Persisting-Data-to-the-Device#sqlite) instead of a text file
-* [ ] Improve style of the todo items in the list [using a custom adapter](http://guides.codepath.com/android/Using-an-ArrayAdapter-with-ListView)
-* [ ] Add support for completion due dates for todo items (and display within listview item)
-* [ ] Use a [DialogFragment](http://guides.codepath.com/android/Using-DialogFragment) instead of new Activity for editing items
-* [ ] Add support for selecting the priority of each todo item (and display in listview item)
-* [ ] Tweak the style improving the UI / UX, play with colors, images or backgrounds
+### User Stories
+`TODO://` In the **User Stories section below**, add an `x` in the `-[ ]` like this `- [x]` for any user story you complete. (🚫 Remove this paragraph after after checking off completed user stories)
 
-The following **additional** features are implemented:
+#### REQUIRED (10pts)
+- [ ] (10pts) User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
-* [ ] User can search for task items by keywords in the name
-* [ ] User can sort task items by due date, priority
-* [ ] Splash Screen while the app loads/configures itself (DBFlow) on slower devices
+#### BONUS
+- [ ] (2pts) Views should be responsive for both landscape/portrait mode.
+   - [ ] (1pt) In portrait mode, the poster image, title, and movie overview is shown.
+   - [ ] (1pt) In landscape mode, the rotated alternate layout should use the backdrop image instead and show the title and movie overview to the right of it.
 
-## Video Walkthrough 
+- [ ] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+- [ ] (2pts) Improved the user interface by experimenting with styling and coloring.
+- [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
-Here's a walkthrough of implemented user stories:
+### App Walkthough GIF
+`TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src='walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src="YOUR_GIF_URL_HERE" width=250><br>
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+### Notes
+Describe any challenges encountered while building the app.
 
+### Open-source libraries used
 
-## Notes
-
-These are great ideas from the template. I will try to work on them.
-
-* Use material design's floating action button style to allow for creation of new task items (promoted action)
-* Use an icon (eg. exclamation or bell) and colored vertical line to signify overdue task items
-* Allow users to set optional reminders for task items in the list
-* Human readable dates (ex. Today, Tomorrow, Yesterday, This Month, Next Month, x Days from Now, n Months from Now etc.)
-* Tabbed activity view to separate/segragate items either by priority, due date or completed/incomplete/archived
-* Tindr-like take on ToDos with a swipeable UX for done/not-done items (aka Listr)
-* Connect to some simple backend server (like Firebase) to persist a user's todo tak items across multiple devices (with a unique ID such as a set of login credentials)
-
+- [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Androids
 
 
 ## License
