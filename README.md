@@ -27,7 +27,7 @@ Time spent: ** ** hour(s) spent in total
 
 ### App Walkthough GIF
 
-<img src="walkkthrough_2.gif" width=250><br>
+<img src="walkthrough_2.gif" width=250><br>
 
 ### Notes
 
