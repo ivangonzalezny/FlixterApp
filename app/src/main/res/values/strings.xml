@@ -2,4 +2,5 @@
     <string name="app_name">Flixter App</string>
     <string name="title">Maleficent: Mistress of Evil</string>
     <string name="overview">Maleficent and her goddaughter Aurora begin to question the complex family ties that bind them as they are pulled in different directions by impending nuptials, unexpected allies, and dark new forces at play.</string>
+    <string name="title_str">titleTransition</string>
 </resources>

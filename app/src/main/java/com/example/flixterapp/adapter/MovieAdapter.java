@@ -1,9 +1,11 @@
 package com.example.flixterapp.adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.util.Log;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -93,9 +96,17 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                     // direct to a new activity
                     //Toast.makeText(context,movie.getTitle(),Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(context, DetailActivity.class);
-                    //i.putExtra("title", movie.getTitle());
+
                     i.putExtra("movie", Parcels.wrap(movie));
-                    context.startActivity(i);
+
+                    androidx.core.util.Pair p1 = new androidx.core.util.Pair((View) tvTitle, "titleTransition");
+                    androidx.core.util.Pair p2 = new androidx.core.util.Pair((View) tvOverview, "overviewTransition");
+                    androidx.core.util.Pair p3 = new androidx.core.util.Pair((View) ivPoster, "ivPosterTransition");
+
+                    ActivityOptionsCompat options = ActivityOptionsCompat.
+                            makeSceneTransitionAnimation((Activity)context, p1, p2, p3);
+                    //ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context, (View) tvTitle, "titleTransition");
+                    context.startActivity(i, options.toBundle());
 
                 }
             });
