@@ -19,6 +19,7 @@ import androidx.core.app.ActivityOptionsCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.GlideBuilder;
 import com.example.flixterapp.DetailActivity;
 import com.example.flixterapp.R;
 import com.example.flixterapp.models.Movie;
