@@ -108,11 +108,8 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder>{
                             makeSceneTransitionAnimation((Activity)context, p1, p2, p3);
                     //ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation((Activity) context, (View) tvTitle, "titleTransition");
                     context.startActivity(i, options.toBundle());
-
                 }
             });
         }
-
-
     }
 }
