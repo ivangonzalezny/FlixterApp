@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context=".DetailActivity"
     android:orientation="vertical">
 
@@ -15,11 +16,12 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:transitionName="titleTransition"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:text="@string/title"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="@color/colorTitle"
+        android:transitionName="titleTransition" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -29,10 +31,12 @@
 
     <TextView
         android:id="@+id/tvOverview"
-        android:transitionName="overviewTransition"
         android:layout_width="match_parent"
         android:layout_height="170dp"
+        android:background="@color/colorPrimaryDark"
         android:text="@string/overview"
-        android:textSize="18sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:transitionName="overviewTransition" />
 
 </LinearLayout>

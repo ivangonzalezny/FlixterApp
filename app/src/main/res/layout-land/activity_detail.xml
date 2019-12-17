@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.google.android.youtube.player.YouTubePlayerView
@@ -15,12 +17,15 @@
         android:layout_height="40dp"
         android:text="@string/title"
         android:textSize="30sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorTitle"
         android:transitionName="titleTransition" />
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
         android:numStars="10" />
 
     <TextView
@@ -28,6 +33,8 @@
         android:transitionName="overviewTransition"
         android:layout_width="match_parent"
         android:layout_height="170dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
         android:text="@string/overview"
         android:textSize="18sp" />
 
