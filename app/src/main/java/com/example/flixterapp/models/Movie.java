@@ -17,6 +17,7 @@ public class Movie {
     String title;
     String overview;
     double rating;
+    String release_date;
 
     // empty constructor needed for the Parcel Library
     public Movie() {
@@ -29,6 +30,7 @@ public class Movie {
         overview = jsonObject.getString("overview");
         rating = jsonObject.getDouble("vote_average");
         movieId = jsonObject.getInt("id");
+        release_date = jsonObject.getString("release_date");
     }
 
     public static List<Movie> fromJsonArray(JSONArray movieJsonArray) throws JSONException {
@@ -62,4 +64,6 @@ public class Movie {
     public int getMovieId() {
         return movieId;
     }
+
+    public String getRelease_date() { return release_date; }
 }
