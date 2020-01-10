@@ -24,13 +24,12 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:transitionName="titleTransition"
         android:layout_width="239dp"
         android:layout_height="80dp"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="2dp"
         android:layout_marginLeft="2dp"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="2dp"
         android:layout_marginRight="2dp"
         android:layout_marginBottom="2dp"
@@ -38,11 +37,11 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/title"
         android:textColor="@color/colorTitle"
-        android:textSize="30sp" />
+        android:textSize="28sp"
+        android:transitionName="titleTransition" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:transitionName="overviewTransition"
         android:layout_width="239dp"
         android:layout_height="100dp"
         android:layout_below="@+id/tvTitle"
@@ -52,6 +51,7 @@
         android:background="@color/colorPrimaryDark"
         android:text="@string/overview"
         android:textColor="#FFFFFF"
-        android:textSize="16sp" />
+        android:textSize="14sp"
+        android:transitionName="overviewTransition" />
 
 </RelativeLayout>
