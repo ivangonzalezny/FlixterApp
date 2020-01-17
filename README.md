@@ -4,21 +4,9 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 by: **Ivan Gonzalez**
 
 Some feautures:
-- Details for each movie (ratings using RatingBar, popularity, and synopsis).
+- Details for each movie (rating, popularity, and synopsis).
 - Trailer videos in full-screen using the YouTubePlayerView.
-- Views responsive for both landscape/portrait mode.
-   - In portrait mode, the poster image, title, and movie overview is shown.
-   - In landscape mode, the rotated alternate layout uses the backdrop image instead.
-
-#### BONUS
-
-- [ ] Trailers for popular movies are played automatically when the movie is selected (1 point).
-  - [ ] When clicking on a popular movie (i.e. a movie voted for more than 5 stars) the video should be played immediately.
-  - [ ] Less popular videos rely on the detailed page should show an image preview that can initiate playing a YouTube video.
-- [ ] Add a play icon overlay to popular movies to indicate that the movie can be played (1 point).
-- [ ] Apply the popular ButterKnife annotation library to reduce view boilerplate. (1 point)
-- [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
-- [ ] (2pts) Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+- Views responsive for both landscape/portrait mode showing poster image or backdrop image in each case.
 
 ### App Walkthough GIF
 
@@ -31,7 +19,7 @@ Some feautures:
 
 ## License
 
-    Copyright 2019 Ivan Gonzalez
+    Copyright 2020 Ivan Gonzalez
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
